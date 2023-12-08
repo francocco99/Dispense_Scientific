@@ -1,0 +1,59 @@
+\documentclass[12 pt ,a4 paper, openright, oneside]{article}
+\setlength{\marginparwidth}{2cm}
+% Pacchetti %
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{hyphenat}
+\usepackage[hypcap=true]{caption}
+\usepackage{setspace}
+\usepackage[hang,flushmargin,bottom]{footmisc}
+\usepackage{todonotes} % Note Todo
+\usepackage{soul} % strikethrough 
+\usepackage{caption}
+\usepackage{amssymb,amsmath}
+\usepackage[official]{eurosym}
+\usepackage{frontespizio}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{amsfonts} 
+\usepackage[T2A,T1]{fontenc}
+\usepackage[russian, english]{babel}
+
+% Tabelle %
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{array,ragged2e}
+\usepackage{colortbl}
+\newcolumntype{P}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+% Immagini %
+\usepackage{graphicx, wrapfig, float, rotating, subfigure}
+
+% \graphicspath{{images/}}
+
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+
+\begin{document}
+\include{frontespizio.tex}
+\tableofcontents
+\include{intro.tex}
+\include{DataVisualization.tex}
+
+\end{document}
