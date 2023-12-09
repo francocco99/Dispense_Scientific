@@ -150,6 +150,9 @@ in un punto e dimensionato in modo che la sua area sia proporzionale alla quanti
 
 \subsection{Grafici Fondamentali (Attributi Multipli)}
 \subsubsection{Stacked Bar Charts}
+Rappresentazione di attributi aggiuntivi. 
+Tante barre quanti sono le categorie del primo attributo, e altrettanti segmenti all'interno di ciascuna barra quanti sono i valori dell'altro attributo categorico. 
+Utile per comunicare la proporzione
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/StackedBar.png} % Sostituisci 'nome_immagine' con il nome del tuo file immagine
@@ -157,27 +160,37 @@ in un punto e dimensionato in modo che la sua area sia proporzionale alla quanti
     \label{fig:immagine}
 \end{figure}
 \subsubsection{Grouped Bar Charts}
+Rappresentazione di attributi aggiuntivi. 
+Lo stesso grafico a barre viene ripetuto più volte per il numero di categorie nell'attributo aggiuntivo. 
+Utile per confrontare i valori individuali
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/GroupedBar.png} % Sostituisci 'nome_immagine' con il nome del tuo file immagine
+    \includegraphics[width=0.5\textwidth]{images/GroupedBar.png} 
     \caption{Grouped Bar Charts}
     \label{fig:immagine}
 \end{figure}
 \subsubsection{Stacked Line Charts}
+I valori tra le categorie sono impilati uno sopra l'altro. Non è ideale per leggere e confrontare i valori individuali nel tempo: 
+la forma delle linee è influenzata dalla forma delle linee sottostanti (interazione/filtraggio per compensare). 
+Non è significativo per i numeri negativi e dati che non dovrebbero essere sommati (ad esempio, temperatura).
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/Stacked.png} % Sostituisci 'nome_immagine' con il nome del tuo file immagine
-    \caption{Stacked Line Charts}
+    \includegraphics[width=0.5\textwidth]{images/Stacked.png} 
     \label{fig:immagine}
 \end{figure}
 \subsubsection{Line Charts Series}
+Raccolta di linee nello stesso grafico. 
+Facile confrontare i valori, ma le curve sovrapposte possono rendere il grafico difficile da leggere
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/LineCharts.png} % Sostituisci 'nome_immagine' con il nome del tuo file immagine
+    \includegraphics[width=0.5\textwidth]{images/LineSeries.png} % Sostituisci 'nome_immagine' con il nome del tuo file immagine
     \caption{Line Charts Series}
     \label{fig:immagine}
 \end{figure}
 \subsubsection{Bubble Charts}
+Variante degli scatterplot, adattata per rappresentare attributi aggiuntivi. Le aree dei cerchi 
+rappresentano un attributo aggiuntivo (avviso: area, non raggio). 
+I colori possono distinguere le categorie o rappresentare attributi aggiuntivi. Capacità limitata di dimensioni dei dati (interazione per compensare).
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/Bubble.png} % Sostituisci 'nome_immagine' con il nome del tuo file immagine
@@ -185,6 +198,7 @@ in un punto e dimensionato in modo che la sua area sia proporzionale alla quanti
     \label{fig:immagine}
 \end{figure}
 \subsubsection{Small multiples}
+Valido per tutti i tipi di grafici.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/SmallMultiples2.png} % Sostituisci 'nome_immagine' con il nome del tuo file immagine
@@ -192,6 +206,8 @@ in un punto e dimensionato in modo che la sua area sia proporzionale alla quanti
     \label{fig:immagine}
 \end{figure}
 \subsubsection{Symbol Maps}
+Questo tipo di mappa utilizza simboli, come icone o forme, per visualizzare informazioni diverse relative a diverse caratteristiche o 
+attributi su una mappa geografica.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/SymbolMaps.png} % Sostituisci 'nome_immagine' con il nome del tuo file immagine
@@ -200,6 +216,8 @@ in un punto e dimensionato in modo che la sua area sia proporzionale alla quanti
 \end{figure}
 \subsection{Grafici Fondamentali (Attributi Gerarchici)}
 \subsubsection{Sunburst Charts}
+Per mostrare gerarchie, ogni anello rappresenta un livello nella gerarchia,
+ muovendosi verso l'esterno.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/SunBurst.png} % Sostituisci 'nome_immagine' con il nome del tuo file immagine
@@ -207,6 +225,12 @@ in un punto e dimensionato in modo che la sua area sia proporzionale alla quanti
     \label{fig:immagine}
 \end{figure}
 \subsubsection{Treempas}
+
+Un modo alternativo per visualizzare le gerarchie, utilizzando la dimensione dell'area
+Ogni rettangolo rappresenta una categoria, con rettangoli sottocategorie nidificati
+Quando una quantità è assegnata a una categoria, la sua dimensione dell'area viene visualizzata in proporzione a quella quantità e alle altre quantità all'interno della stessa categoria padre in una relazione parte-tutto
+Diverse strategie di impaginazione (ad esempio, algoritmo squarified)
+Compatto e efficiente nello spazio, ottimo per avere una panoramica delle strutture, perfetto per confrontare proporzioni tramite la dimensione dell'area, ma meno efficace nel mostrare i livelli nella gerarchia rispetto, ad esempio, ai grafici a raggiera (sunburst charts).
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{images/TreeMpas.png} % Sostituisci 'nome_immagine' con il nome del tuo file immagine
