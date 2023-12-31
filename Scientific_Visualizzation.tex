@@ -72,7 +72,7 @@ Molte tecniche. L'idea alla base del "volume ray casting": ogni punto/cella dovr
 Visualizzazione dei punti critici, delle isolinee e delle isosuperfici.Visualizzazione delle astrazioni topologiche
 \subsubsection{Critical Points, continuous Case}
 Nel contesto continuo, i punti critici sono punti di una varietà dove il gradiente di una funzione scalare continua si annulla.\\
-Data Una funzione smmoth $f:M \rightarrowR$ Su una varietà liscia 𝑀, un punto P
+Data Una funzione smmoth $f:M \rightarrow R $ Su una varietà liscia M, un punto P
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/CriticalPoints.png} 
@@ -112,5 +112,100 @@ Problema: in pratica, i punti critici possono comparire in corrispondenza di lie
     \item Possiamo utilizzare l'Omelogia Persistente.
 \end{itemize}
 
-\subsection{Filtration}
-\subsection{Reeb graph}
+\subsubsection{Filtration}
+Intuizione: sequenze annidate di insiemi di sotto livelli, in accordo all'aumento del valore scalare PL.Q
+Come cambia il valore della funzione, gli attributi topologici appaiano si uniscono o scompaiono, questi cambiamenti avvengono nei punti critici.
+Dato che questi eventi occorronno nei punti critici, possiamo associare una misura di persistenza con le coppie di punti critici dell'input degli attributi scalari.
+\textbf{persistenza}: valore assoluto della differenza di f-value  di coppie di punti critici.
+\textbf{Intuizione}: lifespan.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Filtr.png} 
+    \caption{Pice-wise liner setting}
+    \label{fig:immagine}
+\end{figure}
+\subsubsection{Diagramma di Persistenza}
+La persistenza è una misura dell'\textit{importanza} di un punto critico, ogni coppia di punti critici è rappresentata da una barra verticale e la persistenza è data dall'altezza della barra.
+Trovare un attributo scalare con solo un sottoinsieme di punti critici, la persistenza è il criterio.
+Il diagramma persistenza mostra una rappresentazione coincisa di coppie di punti critici, ma non mostrano informazioni sulla relazione di adiacenza di coppie di punti del dominio ???.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/DiagPers.png} 
+    \caption{Diagramma della persistenza}
+    \label{fig:immagine}
+\end{figure}
+Idea: guardare ai level set cioè l'insieme di punti che hanno lo stesso valore della funzionem un atrlo strumento sono i Reeb graphs, che tengono traccia dell'evoluzione dei level sets.
+
+\subsubsection{Reeb graph}
+I Reeb graph continuamente riducono  ogni componente connesso di un level set in un punto .....
+Ancora, la topologia di un level sets cambia nei punti critici.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/ReebGraph.png} 
+    \caption{Reeb Graph}
+    \label{fig:immagine}
+\end{figure}
+Una gerarchia di Reeb Graphs può essere ottenuta dalla rimozione ripetuta, guidata dalla persistenza, di coppie di punti critici( quindi arhci nel grafo).
+La segmentazione può essere ottenuta considerando la pre immagine di ogni arco nel Reeb graph.
+\subsection{Vector field visualization}
+Gli attributi sono rappresentati da vettori:
+\begin{itemize}
+    \item rateo di cambiamento ... 
+    \item i vettori hanno grandezza e direzione.
+\end{itemize}
+Con problemi che coinvolgono le derivate dei campi scalari.
+Il modo facile: disegna una freccia, non è richiesta nessuna interpolazione, overall impressions on the field, ma ci sono probblemi con l'occlusione.
+La grandezza mappata sulla lunghezza, larghezza e colore.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/VectorField.png} 
+    \caption{Vector field visualization}
+    \label{fig:immagine}
+\end{figure}
+\subsubsection{Tensor and Vector field visualization}
+\begin{figure}[htbp]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{images/VecF.png} 
+        \caption{Topological Data Analysis}
+        \label{fig:immagine1}
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{images/TensorField.png} % Sostituisci 'immagine2' con il nome del tuo file immagine
+        \caption{Attributi rappresentati da tensori con problemi che coinvolgono derivate dei campi vettoriali }
+        \label{fig:immagine2}
+    \end{minipage}
+\end{figure}
+
+\subsection{Scientific illustration}
+La scinetific illustart è una disciplina che a che fare con il disegno o il rendering di immagini di soggetti scientifici per informare e communicare.
+Artwork e scienza: skills estetiche in combinazione con osservazioni scientifiche, ne sono esempi illustrazioni biologiche, mediche e tecniche. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/IllustScient.png} 
+    \caption{illustration visualization}
+    \label{fig:immagine}
+\end{figure}  
+In contrasto con la computer grafica tradizionale che si concentra sul realismo, la \textbf{NPR}(Non-photorealistic rendering) è ispirata dalla pittura, dal disegno e dai cartoni.
+Esempi tecnici per l'NPR includono: 
+\begin{itemize}
+    \item \textbf{Sparse line drawings}:disegni di insiemi sparsi di contorni lineari, che illustrano alcune feature.
+    \item \textbf{Stippling}: creazione di pattern unici usando punti, che possono simulare vari livelli di ombra e solidità.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/NPR.png} 
+    \caption{Example: Non-photorealistic rendering}
+    \label{fig:immagine}
+\end{figure}  
+Si concentra su diversi livelli di oggetti o livelli.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/ExpresViusal.png} 
+    \caption{Expressive Viusalization}
+    \label{fig:immagine}
+\end{figure}  
