@@ -135,11 +135,10 @@ Il diagramma persistenza mostra una rappresentazione coincisa di coppie di punti
     \caption{Diagramma della persistenza}
     \label{fig:immagine}
 \end{figure}
-Idea: guardare ai level set cioè l'insieme di punti che hanno lo stesso valore della funzionem un atrlo strumento sono i Reeb graphs, che tengono traccia dell'evoluzione dei level sets.
+Idea: guardare ai level set cioè l'insieme di punti che hanno lo stesso valore della funzionem, un atrlo strumento sono i Reeb graphs, che tengono traccia dell'evoluzione dei level sets.
 
 \subsubsection{Reeb graph}
-I Reeb graph continuamente riducono  ogni componente connesso di un level set in un punto .....
-Ancora, la topologia di un level sets cambia nei punti critici.
+In breve, il grafo di Reeb contrae continuamente ciascun componente connesso dei level set in un punto, producendo un complesso simpliciale di dimensione 1. Di nuovo, la topologia dei level set cambia nei punti critici. Gli estremi vengono mappati su vertici di valenza -1, mentre le sella vengono mappate su vertici di valenza superiore.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/ReebGraph.png} 
@@ -155,8 +154,10 @@ Gli attributi sono rappresentati da vettori:
     \item i vettori hanno grandezza e direzione.
 \end{itemize}
 Con problemi che coinvolgono le derivate dei campi scalari.
-Il modo facile: disegna una freccia, non è richiesta nessuna interpolazione, overall impressions on the field, ma ci sono probblemi con l'occlusione.
-La grandezza mappata sulla lunghezza, larghezza e colore.
+Il modo più semplice: disegnare frecce
+Nessuna interpolazione richiesta, impressione generale del campo, ma problemi con le occlusioni
+La grandezza mappata a lunghezza, larghezza, colore
+3D: anche distorsione prospettica (interazione necessaria per recuperare indizi di profondità)
 
 \begin{figure}[H]
     \centering

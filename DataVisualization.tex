@@ -2,7 +2,7 @@
 La visualizzazione delle informazioni è un modo per comunicare significativamente i dati e aiutare le persone a 
 dare un senso a grandi quantità di informazioni.
 Le visualizzazioni come artefatti cognitivi che consentono il trattamento parallelo delle informazioni.
-Tre scopi principali della visulizzazione:
+La visulizzazione ha tre scopi principali:
 \begin{itemize}
     \item \textbf{Explanatory}: Le visualizzazioni esplicative sono strumenti per presentare informazioni, comunicare dati e messaggi, spiegare qualcosa a qualcun altro.
     \item \textbf{Exploratory}: Le visualizzazioni esplorative sono strumenti per i lettori per analizzare ciò che viene loro presentato. Molto spesso, l'esito dell'analisi esplorativa non è solo la risposta alle domande originali, ma la generazione di nuove domande.
@@ -21,8 +21,7 @@ Informazioni fattuali come misurazioni o statistiche, utilizzate come base per i
 I dati sono collezioni di \textit{items} e \textit{attributes} degli items.
 Gli \textit{Items} sono gli oggetti/entità che vogliamo viusalizzare.
 Gli \textit{Attributi} sono le proèrietà degli oggetti/entità.
-
-Una \textit{Tabella} è una griaglia di colonne e righr, dove le righe  rapresentanto gli item e le colonne gli attributi.
+Una \textit{Tabella} è una griaglia di colonne e righe, dove le righe  rapresentanto gli item e le colonne gli attributi.
 Un \textit{network} è una collezione di nodi che rappresentano gli item, connessi tramite dei link; entrambi nodi e link possono avere attributi.
 
 \subsection{Tipi di attributi}
@@ -30,14 +29,14 @@ Un \textit{network} è una collezione di nodi che rappresentano gli item, connes
     \item \textit{Quantitativi}: sono gli attributi dove i valori rappresentano quantità misurate, 
         questi valori possono essere ordinati, ma può essere calcolata anche la distanza tra i valori.
     \item  \textit{Categorici}: sono gli attributi dove i valori descrivino le categorie,
-        possono essere di tre tipi, \textbf{Nominali} se non hanno un ordine particolare, \textbf{Ordinali} se possono essere ordinati,
+        possono essere di tre tipi, \textbf{Nominali} se non hanno un ordine particolare, \textbf{Ordinali} se possono essere ordinati e
         \textbf{Binary} se hanno solo due stati.
 \end{itemize}
 \subsection{Semantica degli attributi}
 \begin{itemize}
-    \item \textbf{Spaziali e temporali}: Esempio la location, latitudine e longitudine o la data di assunzione come attributo temporale.
-    \item \textbf{Sequnziali, ciclici divergenti}: Esempio: i mesi dell'anno sono ciclici, la temperatura è un attributo divergente.
-    \item \textbf{Gerarchici}: Tipi di prodotto con sottocategorie, un esempio sono i vestiti.
+    \item \textbf{Spaziali e temporali}: esempio la location, latitudine e longitudine o la data di assunzione come attributo temporale.
+    \item \textbf{Sequnziali, ciclici divergenti}: esempio: i mesi dell'anno sono ciclici, la temperatura è un attributo divergente.
+    \item \textbf{Gerarchici}: tipi di prodotto con sottocategorie, un esempio sono i vestiti.
 \end{itemize}
 Si deve selezionare la visualizzazione appropriata a seconda del tipo e dalla semantica dell'attributo.
 Esempio:
@@ -64,12 +63,12 @@ Visualizza come una quantità misurata si distribuisce tra categorie. Ogni barra
  Non confondere con gli istogrammi
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/BarCharts.png} 
+    \includegraphics[width=0.5\textwidth]{images/BarChart.png} 
     \caption{Bar Charts}
     \label{fig:immagine}
 \end{figure}
 \subsubsection{Histograms}
-Frequenza degli elementi. Dati bivariati: una variabile indipendente quantizzata in intervalli 
+Frequenza degli elementie dati bivariati: una variabile indipendente quantizzata in intervalli 
 (blocchi) e una variabile dipendente.
 \begin{figure}[H]
     \centering
