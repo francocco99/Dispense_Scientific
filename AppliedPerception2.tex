@@ -1,7 +1,6 @@
 \section{Applied Perception II }
 \subsection{Color Vision}
-La \textit{Color Vision} può essere considerata come superflua nella vita moderna
-Ma il colore comunque è estreamamente utile nella data visualization:
+La \textit{Color Vision} può essere considerata come superflua nella vita moderna, ma il colore comunque è estreamamente utile nella data visualization in diversi casi:
 \begin{itemize}
     \item Mostrare i patterns
     \item Labeling
@@ -24,11 +23,8 @@ Ma il colore comunque è estreamamente utile nella data visualization:
 \end{figure}
 Pensare al colore come un attributo di un oggetto invece che ad una caratteristica primaria(C.Ware).
 \subsection{Trichromacy and Opponent process theories}
-Abbbiamo, sulla retina, tre distinti recettori per i colori:
-\begin{itemize}
-    \item the \textbf{cones}: che sono attivi ai livelli normali di luce
-    \item the \textbf{rods}: l'influenza dei rods sulla percezione può essere ignorata.
-\end{itemize}
+Abbbiamo, sulla retina, tre distinti recettori per i colori, i\textbf{cones} (coni) che sono attivi ai livelli normali di luce e sono fotorecettori sensibili alla luce intensa e al colore, mentre i \textbf{rods} (bastoncelli) non hanno influenze sulla percezione, sono fotorecettori sensibili alla luce scarsa e responsabili della visione notturna e periferica.
+
 \subsubsection{Trichromacy theory}
 I \textit{cones} sono sensibili alle diverse onde di luce.
 Quindi, assorbono luce attorno lo spettro del colore blue, verde e rosso.
@@ -55,8 +51,15 @@ Dato uno standard di colori primari, si può usare una transformazione per crear
 Lo spazio colore CIE XYZ è uno spazio colore standardizzato sviluppato dalla Commission Internationale de l'Eclairage (CIE). È un modello matematico che rappresenta tutti i colori visibili agli esseri umani attraverso tre valori numerici: X, Y e Z.
 Questi valori sono definiti in base alle risposte dei tre tipi di coni presenti nell'occhio umano (sensibili alle lunghezze d'onda dei colori rosso, verde e blu).
 Il valore Y rappresenta la luminosità, mentre X e Z descrivono la posizione orizzontale e verticale del colore nello spazio XYZ.
- 
+Per un valore fisso di Y, il piano XZ contiene tutte le possibili cromaticità a quella luminanza.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Chromaticity diagram.png} 
+    \caption{Chromaticity diagram}
+    \label{fig:immagine}
+\end{figure}
 Il diagramma di cromaticità è uno strumento visivo utilizzato per rappresentare i colori visibili senza tener conto della luminosità. Questo diagramma rappresenta le proprietà del colore in termini di tonalità e saturazione, ignorando la luminanza.
+
 \subsubsection{Opponent process theory}
 
 Alla fine del XIX secolo, il psicologo tedesco Hering propose la teoria (successivamente supportata da prove sperimentali) secondo cui i coni della retina combinano il loro stimolo formando tre coppie di colori che competono tra loro per formare quello finale. Queste coppie, chiamate coppie antagoniste, sono: nero-bianco, giallo-verde e giallo-blu
@@ -113,10 +116,22 @@ Suggerimento: utilizzare colori saturi quando si codifica piccoli simboli o line
 \subsubsection{Luminance and visualization}
 I canali cromatici rosso-verde e giallo-blu sono in grado ciascuno di trasportare 
 solo circa un terzo della quantità di dettagli trasportati dal canale in bianco e nero (Mullen, 1985). 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Luminance.png} 
+    \caption{Luminance and visualization}
+    \label{fig:immagine}
+\end{figure}
 Le differenze puramente cromatiche non sono sufficienti per visualizzare dettagli fini. Assicurare un adeguato contrasto di luminanza con lo sfondo (anche se vengono utilizzati colori con differente cromaticità).
 Un confine di contrasto può migliorare la leggibilità dei simboli colorati.
 \subsubsection{Saturation and visualization}
 Utilizzare colori saturi per codificare piccoli simboli/dettagli fini e colori meno saturi per codificare aree grandi.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/Saturation.png} 
+    \caption{Saturation and Visualization}
+    \label{fig:immagine}
+\end{figure}
 \subsubsection{Color for Labeling}
 Post e Greene (1986) hanno condotto un esperimento sulla denominazione dei colori (sono stati mostrati 210 colori diversi su uno sfondo nero in una stanza oscurata). Solo otto colori più il bianco vengono denominati in modo coerente. Anche se non è generalmente applicabile,
 ciò suggerisce che solo pochi colori possono essere utilizzati come etichette di categoria.
@@ -126,3 +141,7 @@ poiché le convenzioni non sono universali. L'associazione semantica con il grig
 Evita colori problematici per le persone daltoniche.
 Utilizza una scala di colori basata sullo spettro solo quando il suo utilizzo è profondamente radicato nella cultura degli utenti.
 Per rivelare dettagli fini, utilizza sequenze di pseudocolori che variano nella luminosità, non solo nella cromaticità.
+\subsubsection{Color Ramps}
+Evita le scale di colore problematiche per le persone con daltonismo.
+Utilizza una scala di colori basata sullo spettro quando il suo utilizzo è profondamente radicato nella cultura degli utenti.
+Per rivelare dettagli precisi, utilizza sequenze di pseudocolori che variano nella luminosità, non solo nella cromaticità.
